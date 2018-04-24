@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+    <!--Preloader -->
+  <div id="contenedor_carga">
+    <div id="carga"></div>
+  </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">El paraíso de Alicia</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Inicio <span class="sr-only">Inicio</span></a></li>
+            <li class="active"><a href="contacto.html">Contacto</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menú <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="foro.html">Foro</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="galeria.html">Galería</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" id="search" placeholder="Buscar">
+            </div>
+            <button type="submit" class="btn btn-default">Buscar</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="main"> <!-- Primer Div Parallax -->
+      <div class="container" id="particles-js">
+        <h2>Bienvenido</h2>
+        <p>"Formando pequeños genios con un propósito"</p>
+      </div>
+    </div> <!-- Cierre del Primer Div Parallax -->
+    <!--Cero a genios-->
+    <div class="supporting">
+      <div class="container">
+          <div>
+            <h2>Información</h2>
+            <hr>
+            <p>Teléfono: 5751185/3178503059</p>
+            <p>Dirección: Calle 26C#2A-03</p>
+            <p>Email: elparaisodealicia@gmail.com</p>
+          </div>
+          <div class="form-group col-xs-12 col-md-12 col-sm-12 google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0592797229497!2d-74.20955708518748!3d4.583380196670173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fd1c14ee56b%3A0x5785303398fd2793!2sCl.+26c+%232a-3%2C+Soacha%2C+Cundinamarca!5e0!3m2!1ses!2sco!4v1516305631217" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div><!--Google maps-->
+        <center>  
+        <div class="col-xs-12 col-md-12 col-sm-12" id="formInquietud">
+          <h2>Formulario de contacto</h2>
+          <hr>
+          <form action="" method="post">
+            <!-- Nombre cliente -->
+            <div class="form-group">
+              <label class="form-control btn-info"><span class="glyphicon glyphicon-user"></span> Nombre </label>
+            </div>
+            <div class="form-group">
+              <input name="nombre_cliente" class="form-control" type="text" placeholder="EJ: PEPITO" required/>
+            </div>
+            <!-- Email cliente -->
+            <div class="form-group">
+              <label class="form-control btn-info"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+            </div>
+            <div class="form-group">
+              <input name="correo_cliente" class="form-control" type="email" placeholder="EJ: TUCORREO@CORREO.COM" required />
+            </div>
+            <!-- Teléfono cliente -->
+            <div class="form-group">
+              <label class="form-control btn-info"><span class="glyphicon glyphicon-phone"></span> Teléfono</label>
+            </div>
+            <div class="form-group">
+              <input name="telefono_cliente" maxlength="10" class="form-control" type="tel" placeholder="EJ:7777777" required />
+            </div>  
+            <div class="form-group">
+              <textarea id="contacto" cols="30" rows="10" class="form-control" placeholder="Escribe tu inquietud y nos pondremos en contacto contigo" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <input type="submit" class="form-control btn btn-info" id="botones" name="enviar" value="Envíar"></input> 
+              <input type="reset" class="form-control btn btn-danger" id="botones" value="Refrescar"></input>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </center>
+    <div class="footer">
+      <div class="container">
+        <div>
+            <a href="https://www.facebook.com/fundacionelparaisodealicia"><img class="img-rotate" src="css/img/facebook.png" alt="Facebook fundación el paraíso de Alicia"></a>
+            <a href="#"><img class="img-rotate" src="css/img/instagram.png" alt="instagram fundación el paraíso de Alicia"></a>
+            <a href="#" target="_blank"><img class="img-rotate" src="css/img/youtube.png" alt="youtube fundación el paraíso de Alicia"></a>
+        </div>
+        <div class="piePagina">
+          <p>Fundación El Paraíso de Alicia Dirección: Calle 26C#2A-03 Teléfono: 5751185 - 3178503059</p>
+        </div>
+        <div class="license">
+          <p>© 2018 QuarkSoftware, All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/particulas.js"></script>
+  <script src="js/scripts.js"></script>
+</html>
