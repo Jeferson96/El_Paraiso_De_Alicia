@@ -1,7 +1,10 @@
+/* ------header ---- */
+/* Estilos Básicos primarios */
 *, *:after, *:before{
   margin: 0;
   padding: 0;
 }
+/* Este contenedor hace parte del Preloader */
 #contenedor_carga{
   background-color: rgba(28,28,28,0.9);
   height: 100%;
@@ -10,6 +13,7 @@
   transition: all 1s ease;
   z-index: 10000;
 }
+/* Preloader */
 #carga{
   border: 15px solid #ccc;
   border-top-color: #F4266A;
@@ -24,15 +28,6 @@
   margin: auto;
   animation: girar 1.5s linear infinite;
 }
-#botones{
-  transition-duration: 3s;
-  transform: scale(1,1);
-}
-#botones:hover{
-  transition-duration: 3s;
-  transform: scale(1.1,1.1);
-}
-
 @keyframes girar{
   from{
     transform: rotate(0deg);
@@ -40,6 +35,7 @@
     transform: rotate(360deg);
   }
 }
+/* Estilos Básicos primarios */
 html,body{
   margin: 0px;
   padding: 0px;
@@ -48,6 +44,7 @@ h1, h2, a {
   font-family: 'fuente', sans-serif;
   font-size: 30px;
 }
+/**Efecto H2 enfoque de color **/
 h2{
   transition-duration: 1s;
   background-color: rgba(28,28,28,0.7);
@@ -57,27 +54,19 @@ h2:hover{
   transition-duration: 1s; 
   background-color: rgba(28,28,28,1.0); 
 }
-p:hover{
-  color: #1c1c1c; 
-}
+/**Fuente por defecto **/
 @font-face {
     font-family: fuente;
     src: url(font/lfl.ttf);
     font-weight: bold;
 
 }
+/**Elemento de búsqueda en el Nav**/
 #search:hover{
   background-color: #ccc;
 }
-.p {
-  font-family: fuente; 
-  font-size: 30px;
-  padding-top: 40px;
-  line-height: 5px;
-}
-#parrafo{
-  font-size: 30px;
-}
+/* ------BODY ---- */
+/**Contenedor base de los DIV, define un parametro máximo y unos ajustes automáticos**/
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -90,7 +79,7 @@ p:hover{
   background-size: cover;
   height: 600px;
 }
-
+/* Ubicamos el contenedor*/
 .main .container {
   position: relative;
   top: 100px;
@@ -118,19 +107,18 @@ p:hover{
   display: inline-block;
 }
 
-/* Supporting */
+/* Supporting(DIV que crea secciones con bg para mostrar el contenido) */
 .supporting {
   background-color: #1c1c1c;
   text-align: center;
   padding: 50px 0 80px;
 }
-
+/*Columna dentro del Supporting */
 .supporting .col {
   float: left;
   width: 30%;
   padding: 10px;
 }
-
 
 .supporting h2 {
   color: #B61A39;
@@ -138,18 +126,12 @@ p:hover{
   margin-bottom: 10px;
 }
 
-.clearfix {
-  clear: both;
-}
-
 .supporting p {
   color: #efefef;
   margin-bottom: 20px;
   line-height: 20px;
 }
-.colAviso:hover {
-  background-color: rgba(28,28,28,0.7); 
-}
+
 .supporting .btn {
   background-color: #eee;
   color: #1c1c1c;
@@ -158,14 +140,21 @@ p:hover{
   text-decoration: none;
   display: inline-block;
 }
+
+.clearfix {
+  clear: both;
+}
+
+/*Configuramos las entradas del blog que traemos por medio de Script a la página*/
 #entradaBlog img{
   padding-top: 5%;
   padding-left: 5%; 
   width:  80%;
   height: 80%;
+  
 }
 
-/* Feature */
+/* Feature, divide los Supporting para que se vea el efecto Parallax */
 .feature {
   background: url(img/1.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -173,12 +162,10 @@ p:hover{
   text-align: center;
   padding: 0 20px;
 }
-
 .feature .container {
   position: relative;
   top: 200px;
 }
-
 .feature h2 {
   color: #B61A39;
   font-size: 60px;
@@ -186,6 +173,20 @@ p:hover{
   padding:50px 0 0;
 
 }
+/*Elementos del formulario*/
+.form-control{
+  width:300px;
+  padding:10px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+/*Contenedor de la galeria*/
+#contenedorGaleria{
+  width: 100%;
+  max-width: 1024px;
+  margin: 100px auto;
+}
+
 /* Footer */
 .footer {
   background-color: #B61A39;
@@ -194,14 +195,11 @@ p:hover{
   text-align: center;
   padding: 0 10px;
 }
-.piePagina{
-  color: white;
-  font-family: fuente,serif;
-  font-size: 20px; 
-}
+/* Licencia copyright */
 .license p{
   color: #ffffff;
 }
+/*Imágenes tipo ícono que están en el footer*/
 .img-rotate{
   transition-duration: 1.5s;
 }
@@ -210,25 +208,7 @@ p:hover{
     background-color: rgba(0,0,0,0.7);
     border-radius: 90%;
 }
-@media (max-width: 700px) {
-  .main h1 {
-    font-size: 110px;
-  }
-  .supporting .col {
-    width: 92%;
-  }
-}
-.form-control{
-  width:300px;
-  padding:10px;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-#contenedorGaleria{
-  width: 100%;
-  max-width: 1024px;
-  margin: 100px auto;
-}
+/*Portafolio de imágenes en la galería*/
 #portafolio{
   width: 100%;
   max-width: 1024px;
@@ -250,6 +230,7 @@ p:hover{
   border-radius: 20%;
   transition-duration: 1.5s;
 }
+/*Frame de Google Maps*/
 .google-maps {
     position: relative;
     padding-bottom: 75%; // This is the aspect ratio
@@ -262,6 +243,16 @@ p:hover{
     left: 0;
     width: 100% !important;
     height: 100% !important;
+}
+
+/*Configuraciones para Responsive Design */
+@media (max-width: 700px) {
+  .main h1 {
+    font-size: 110px;
+  }
+  .supporting .col {
+    width: 92%;
+  }
 }
 
 /*PC*/
